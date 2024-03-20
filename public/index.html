@@ -80,7 +80,24 @@
         <a href="https://192.dextre.xyz/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Página Web</a>
         <a href="https://gitlab.com/users/jsd192/projects" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Repositorios en GitLab</a>
         <a href="https://www.youtube.com/@linuxyelarte1641/videos" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Canal en YouTube</a>
-        <a href="https://archis.dextre.xyz/api/public/dl/eILngEhF?inline=true" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Curriculum Vitae</a>
+      <!-- <a href="https://archis.dextre.xyz/api/public/dl/eILngEhF?inline=true" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Curriculum Vitae</a> -->
+        <a href="https://gitlab.com/jsd192/dextre192/-/blob/main/public/cv/CV-jenrry-soto-dextre.pdf?ref_type=heads" id="btnPdf" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Curriculum Vitae</a>
+
+        <script>
+          document.getElementById("btnPdf").addEventListener("click", function(event) {
+          // Prevenir el comportamiento predeterminado del enlace
+          event.preventDefault();
+  
+          // Obtener la URL del PDF
+          var pdfUrl = this.getAttribute("href");
+  
+          // Abrir el PDF en una ventana nueva
+          window.open(pdfUrl, "_blank");
+          });
+          </script>
+
+
+
       </div>
   
         <!-- Add links to your social networks here. -->

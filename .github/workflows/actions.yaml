@@ -12,6 +12,11 @@ jobs:
     timeout-minutes: 7
 
     steps:
+    # Clona el repositorio
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # configura las credenciales de aws
     - name: Configuración de AWS Credenciales
       uses: aws-actions/configure-aws-credentials@v4
       with:
@@ -21,7 +26,7 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync public/* s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        aws s3 sync public/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
 
     - name: Invalidate CloudFront Cache
       run: |

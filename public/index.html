@@ -39,6 +39,7 @@
       align-items: center;
       gap: 20px;
     }
+
     .footer {
       background-color: #030107;
       color: white;
@@ -46,9 +47,10 @@
       font-size: 10;
       padding: 2px;
       width: 350px;
-      margin: 0px auto; /* este es el margen de la posición del footer abajo */
+      margin: 0px auto;
+      /* este es el margen de la posición del footer abajo */
       /
-    }    
+    }
   </style>
 </head>
 
@@ -114,12 +116,41 @@
       </div>
     </div>
 
-      <footer class="footer" >
-        <p>
-          Website creado por<br>Jenrry Soto Dextre
-        </p>     
-      </footer>
-    </div>
+    <footer class="footer">
+      <p>
+        Website creado por<br>Jenrry Soto Dextre
+      <div class="w3-center">
+        <p>Visitas: <span id="contador">0</span></p>
+      </div>
+      </p>
+    </footer>
+    <script>
+      // Generar un identificador único si no existe
+      if (!localStorage.getItem('visitorId')) {
+        localStorage.setItem('visitorId', Math.random().toString(36).substring(2));
+      }
+
+      // Obtener el identificador único
+      const visitorId = localStorage.getItem('visitorId');
+
+      // Llamar a la API con el identificador único
+      fetch(`https://7ss7rotroe.execute-api.us-east-1.amazonaws.com/prod/ContadorVisitas?visitorId=${visitorId}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Error en la solicitud');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Mostrar el número de visitas en la página
+          document.getElementById('contador').innerText = data.visitas;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('contador').innerText = 'Error al cargar las visitas';
+        });
+    </script>
+  </div>
 
 </body>
 

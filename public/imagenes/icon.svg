@@ -30,11 +30,11 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.94375787"
      inkscape:cx="292.97769"
-     inkscape:cy="293.50749"
+     inkscape:cy="378.80479"
      inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:window-height="1014"
+     inkscape:window-x="1920"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -54,19 +54,19 @@
      id="layer1"
      transform="translate(-121.84484,-289.45642)">
     <g
-       id="g2"
-       inkscape:export-filename="g2.png"
+       id="g1"
+       inkscape:export-filename="miniatura.jpg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <circle
-         style="fill-opacity:1;stroke:#ea9400;stroke-width:12.3402;stroke-dasharray:none;stroke-opacity:1"
+         style="fill-opacity:1;stroke:#ffcd54;stroke-width:12.3402;stroke-dasharray:none;stroke-opacity:1"
          id="path1"
          cx="414.82254"
          cy="582.43414"
          r="288.13046" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:145.932px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.228019px;text-anchor:middle;fill-opacity:1;stroke:#ffcd54;stroke-width:2.13543;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:145.932px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.228019px;text-anchor:middle;fill-opacity:1;stroke:#ffcd54;stroke-width:6.80315091;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:round"
          x="358.11249"
          y="718.6153"
          id="text4"
@@ -75,7 +75,7 @@
            id="tspan4"
            x="358.2265"
            y="718.6153"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:145.932px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0.228019px;fill-opacity:1;stroke:#ffcd54;stroke-width:2.13543;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:145.932px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0.228019px;fill-opacity:1;stroke:#ffcd54;stroke-width:6.80315091;stroke-dasharray:none;stroke-opacity:1;stroke-linecap:round"
            dy="0.2280179">dextre</tspan></text>
     </g>
   </g>

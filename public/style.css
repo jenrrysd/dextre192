@@ -1,25 +1,236 @@
+/* Base Layout */
 body {
-  font-family: sans-serif;
-  margin: auto;
-  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("imagenes/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+
+:root {
+  --main-bg-color: #3c3b3b;
+  --text-white: #ffffff;
+  --text-black: #000000;
+  --hover-blue: #2196F3;
+  --margin-base: 16px;
 }
 
-.navbar a {
-  color: #aaa;
+
+
+/* Utilities */
+.bg-white {
+  background-color: #efc382 !important;
+  color: #000 !important;
+}
+
+.margin {
+  margin: var(--margin-base) !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-large {
+  font-size: 18px !important;
+}
+
+.text-xlarge {
+  font-size: 24px !important;
+}
+
+.padding {
+  padding: 8px 10px !important;
+}
+
+.padding-30 {
+  padding-top: 5% !important;
+  padding-bottom: 2% !important;
+}
+
+.margin-bottom {
+  margin-bottom: var(--margin-base) !important;
+
+}
+
+.linea {
+  border: 1px solid #2d2d2d;
+  margin: 20px auto;
+  width: 350px;
+  max-width: 90%;
+}
+
+/* Layout */
+.container-full {
+  width: 100%;
+}
+
+.section-container {
+  padding: 0.01em 16px;
+}
+
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-col {
+  float: left;
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  border: none;
   display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+  -webkit-border-radius: 10px !important;
+  border-radius: 10px !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn-black {
+  color: #fff !important;
+  background-color: #3c3b3b !important;
+}
+
+.btn-hover-blue:hover {
+  color: #fff !important;
+  background-color: var(--hover-blue) !important;
+}
+
+.hover-opacity:hover {
+  opacity: 0.60;
+}
+
+/* Specific Page Components */
+.image-container {
+  text-align: center;
+  max-width: 800px;
+  width: 90%;
+
+}
+
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  /* border: 2px solid #fff; */
+  overflow: hidden;
+}
+
+.footer {
+  background-color: var(--main-bg-color);
+  color: white;
+  text-align: center;
   font-size: 15px;
   padding: 10px;
+  width: 350px;
+  margin: 5px auto 20px auto;
+  border-radius: 10px;
+}
+
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  /* Increased size slightly */
+  height: 50px;
+  background-color: #0077b5;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  vertical-align: middle;
   text-decoration: none;
+  transition: transform 0.2s;
 }
 
-.navbar a:hover {
-  color: #ffffff;
+.linkedin-icon:hover {
+  transform: scale(1.1);
 }
 
+.linkedin-icon::after {
+  content: "in";
+}
 
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.whatsapp-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 4px;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: transform 0.2s;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  /* Added a white border for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
